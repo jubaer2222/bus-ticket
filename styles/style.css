@@ -5,5 +5,22 @@
 .font-inter{  font-family: "Inter", sans-serif;}
 .font-raleway{ font-family: "Raleway", sans-serif;}
 
-
+.banner{
+    
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%),
+  url(../images/banner.png);
+  
+  width: 1170px;
+  height: 550px;
+  background-repeat: no-repeat;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 100px;
+  border-radius: 16px;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  margin-left: 48px;
+  margin-right: 48px;
+}
 
