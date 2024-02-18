@@ -13,7 +13,9 @@ function handleSeatClick(seatId) {
     
     // Remove the click event listener to prevent further clicks
     seat.removeEventListener('click', handleClick);
-  }
+
+
+ }
 
   // Function to handle click event
   function handleClick(event) {
@@ -29,3 +31,4 @@ function handleSeatClick(seatId) {
   for (let seat of seats) {
     seat.addEventListener('click', handleClick);
   }
+  
