@@ -49,7 +49,7 @@ let seats = document.querySelectorAll('#ticket li');
     seat.addEventListener('click',function(){
 
       count =count - 1 ;
-      document.getElementById('seat-50').innerText = count ;
+      document.getElementById('seat-40').innerText = count ;
       seat.style.backgroundColor = '#00FF00'
       
 
