@@ -45,6 +45,7 @@
 
 
 let seats = document.querySelectorAll('#ticket li');
+let count = 40;
   for (let seat of seats) {
     seat.addEventListener('click',function(){
 
@@ -52,14 +53,19 @@ let seats = document.querySelectorAll('#ticket li');
       document.getElementById('seat-40').innerText = count ;
       seat.style.backgroundColor = '#00FF00'
       
-
       
-
-
-
+  
 
 
     });
   }
 
-let count = 50;
+
+
+
+
+
+  function success(){
+   console.log(ko)
+
+  }

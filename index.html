@@ -10,9 +10,9 @@
    <!-- CSS -->
    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body >
    <header class="md:container md:mx-auto">
-    <nav class="mt-12 mb-12">
+    <nav  class="mt-12 mb-12 all-hide">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -49,9 +49,9 @@
     </nav>
    </header> 
           <!-- MAIN START -->
-   <main class="md:container md:mx-auto">
+   <main   id="all-hide" class="md:container md:mx-auto ">
 
-
+     
         <!-- BANNER -->
 
     <section>
@@ -68,7 +68,7 @@
 
 
           <!-- BEST OFFER -->
-        <section>
+        <section >
           <h3 class="font-raleway font-bold text-4xl text-center mb-12">Best offers for you</h3>
           
             <div class="grid grid-cols-1 lg:grid-cols-2">
@@ -107,7 +107,7 @@
 
           <!--  P H PARIBAHAN -->
 
-    <section class="mt-16 mb-24">
+    <section  class="mt-16 mb-24">
       <div>
         <div class="text-center mb-9">
           <h3 class="font-bold font-raleway text-4xl mb-5">P.H Paribahan</h3>
@@ -287,7 +287,7 @@
 
             
             </div>
-            <button class="btn w-full bg-[#1DD100] mt-5 text-white">Next</button>
+            <button onclick="success()" class="btn w-full bg-[#1DD100] mt-5 text-white">Next</button>
             <div class="flex gap-28 text-[#03071266] mt-3 underline">
               <p>Terms and Conditions</p>
               <p>Cancellation Policy</p>
@@ -302,6 +302,16 @@
 
 
    </main>
+    <!--  OTHER PAGE SECTION -->
+    <section id="all-show" class="hidden" >
+      <div class=" next-page flex flex-col items-center justify-center ">
+        <img src="images/Group.png" alt="">
+        <p class="text-[#27AE60] font-bold text-2xl mt-5  mb-5">SUCCESS</p>
+       <p class="text-center font-medium text-xl">Thank you for Booking Our Bus Seats.<br>We are working hard to find the best service and deals for you. </p>
+          <p class="mt-3 text-[#4A4A4A] text-sm">Shortly you will find a confirmation in your email.</p>
+          <button  class="btn text-white bg-[#27AE60] px-14 rounded-full mt-4">Continue</button>
+      </div>
+    </section>
    <script src="js/script.js"></script>
 </body>
 </html>
