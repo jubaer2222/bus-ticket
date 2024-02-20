@@ -65,7 +65,29 @@ let count = 40;
 
 
 
-  function success(){
-   console.log(ko)
+//   document.getElementById('success').addEventListener('click', function() {
+//     // Hide main, nav, and footer sections
+//     document.getElementById('main-section').style.display = 'none';
+//     document.getElementById('nav-section').style.display = 'none';
+//     document.getElementById('footer-section').style.display = 'none';
 
-  }
+//     // Show new section
+//     const something =  document.getElementById('new-section');
+//    something.classList.remove('hidden');
+// });
+
+function success(){
+  hideElementById('main-section')
+  hideElementById('footer-section')
+  hideElementById('nav-section')
+  showElementById('new-section')
+}
+
+function hideElementById (elementId){
+  const element = document.getElementById(elementId);
+  element.classList.add('hidden')
+}
+function showElementById (elementId){
+  const element = document.getElementById(elementId);
+  element.classList.remove('hidden')
+}
