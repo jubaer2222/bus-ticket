@@ -44,37 +44,69 @@
 
 
 
-let seats = document.querySelectorAll('#ticket li');
-let count = 40;
-  for (let seat of seats) {
-    seat.addEventListener('click',function(){
+// let seats = document.querySelectorAll('#ticket li');
+// let count = 40;
+//   for (let seat of seats) {
+//     seat.addEventListener('click',function(){
 
-      count =count - 1 ;
-      document.getElementById('seat-40').innerText = count ;
-      seat.style.backgroundColor = '#00FF00'
+//       count =count - 1 ;
+//       document.getElementById('seat-40').innerText = count ;
+//       seat.style.backgroundColor = '#00FF00'
       
       
   
 
 
+//     });
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let seats = document.querySelectorAll('#ticket li');
+let totalPrice = 0;
+let count = 40;
+for (let seat of seats) {
+    seat.addEventListener('click', function() {
+  
+      count =count - 1 ;
+      document.getElementById('seat-40').innerText = count ;
+      seat.style.backgroundColor = '#00FF00'
+
+
+      
+
+        totalPrice += 550; 
+       
+        let seatList = document.getElementById('selected-seat');
+        let seatListItem = document.createElement('p');
+        seatListItem.innerText = seat.id;
+        seatList.appendChild(seatListItem);
+
+        
+        let priceList = document.getElementById('selected-price');
+        let priceListItem = document.createElement('p');
+        priceListItem.innerText ='550 Taka';
+        priceList.appendChild(priceListItem);
     });
-  }
+}
 
 
-
-
-
-
-//   document.getElementById('success').addEventListener('click', function() {
-//     // Hide main, nav, and footer sections
-//     document.getElementById('main-section').style.display = 'none';
-//     document.getElementById('nav-section').style.display = 'none';
-//     document.getElementById('footer-section').style.display = 'none';
-
-//     // Show new section
-//     const something =  document.getElementById('new-section');
-//    something.classList.remove('hidden');
-// });
 
 function success(){
   hideElementById('main-section')
@@ -91,3 +123,8 @@ function showElementById (elementId){
   const element = document.getElementById(elementId);
   element.classList.remove('hidden')
 }
+
+
+
+
+
