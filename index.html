@@ -270,14 +270,14 @@
 
             <div class="bg-[#F7F8F8] p-7 rounded-lg">
               <div class="font-inter text-lg flex gap-24">
-                <p>Seat <span id="">0</span></p>
+                <p>Seat <span class="bg-[#00FF00] rounded-lg px-1 text-white" id="seat-select">0</span></p>
                 <p>Class</p>
                 <p>Price</p>
               </div>
               <hr class="mt-3 border-dashed border-gray-400">
 
 
-              <div class="flex gap-64  text-2lg font-semibold">
+              <div class="flex gap-72  text-2lg font-semibold">
                 <div id="selected-seat"></div>
               <div id="selected-price"></div>
               </div>
@@ -303,11 +303,11 @@
 
             <div>
               <div class="font-semibold font-inter mt-6">Phone Number*</div>
-            <input class="font-inter text-[#03071266] py-3 rounded-xl pl-6 pr-32 border mt-4" placeholder="Enter your name" type="text">
+            <input class="font-inter text-[#03071266] py-3 rounded-xl pl-6 pr-32 border mt-4" placeholder="Enter your name" required type="number">
             <div class="font-semibold font-inter mt-6">Passenger Name*</div>
-            <input class="font-inter text-[#03071266] py-3 rounded-xl pl-6 pr-32 border mt-4" placeholder="Enter your phone number" type="text">
+            <input class="font-inter text-[#03071266] py-3 rounded-xl pl-6 pr-32 border mt-4" placeholder="Enter your phone number" type="text" >
             <div class="font-semibold font-inter mt-6">Email ID</div>
-            <input class="font-inter text-[#03071266] py-3 rounded-xl pl-6 pr-32 border mt-4" placeholder="Enter your email id" type="text">
+            <input class="font-inter text-[#03071266] py-3 rounded-xl pl-6 pr-32 border mt-4"  placeholder="Enter your email id" type="email" required >
 
             
             </div>
@@ -333,7 +333,7 @@
         <p class="text-[#27AE60] font-bold text-2xl mt-5  mb-5">SUCCESS</p>
        <p class="text-center font-medium text-xl">Thank you for Booking Our Bus Seats.<br>We are working hard to find the best service and deals for you. </p>
           <p class="mt-3 text-[#4A4A4A] text-sm">Shortly you will find a confirmation in your email.</p>
-          <button  class="btn text-white bg-[#27AE60] px-14 rounded-full mt-4">Continue</button>
+          <button onclick="submit()" class="btn text-white bg-[#27AE60] px-14 rounded-full mt-4">Continue</button>
       </div>
     </section>
 

@@ -81,13 +81,18 @@
 let seats = document.querySelectorAll('#ticket li');
 let totalPrice = 0;
 let count = 40;
+let count2 = 0
 for (let seat of seats) {
     seat.addEventListener('click', function() {
   
       count =count - 1 ;
       document.getElementById('seat-40').innerText = count ;
-      seat.style.backgroundColor = '#00FF00'
+      seat.style.backgroundColor = '#00FF00';
 
+      count2 =count2 + 1 ;
+      document.getElementById('seat-select').innerText = count2 ;
+      
+      
 
       
 
@@ -101,9 +106,12 @@ for (let seat of seats) {
         
         let priceList = document.getElementById('selected-price');
         let priceListItem = document.createElement('p');
-        priceListItem.innerText ='550 Taka';
+        priceListItem.innerText ='550';
+        
         priceList.appendChild(priceListItem);
     });
+
+    
 }
 
 
@@ -125,6 +133,9 @@ function showElementById (elementId){
 }
 
 
-
-
-
+function submit(){
+  hideElementById('new-section')
+  showElementById('main-section')
+  showElementById('nav-section')
+  showElementById('footer-section')
+}
